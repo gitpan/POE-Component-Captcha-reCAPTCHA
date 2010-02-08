@@ -1,0 +1,36 @@
+---
+abstract: 'A POE implementation of the reCAPTCHA API'
+author:
+  - 'Chris Williams <chris@bingosnet.co.uk>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.47
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.93'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: POE-Component-Captcha-reCAPTCHA
+no_index:
+  directory:
+    - examples
+    - inc
+    - t
+provides:
+  POE::Component::Captcha::reCAPTCHA:
+    file: lib/POE/Component/Captcha/reCAPTCHA.pm
+    version: 0.02
+requires:
+  Captcha::reCAPTCHA: 0.92
+  HTTP::Request: 0
+  POE: 1.284
+  POE::Component::Client::HTTP: 0.894
+  perl: 5.6.0
+resources:
+  homepage: http://github.com/bingos/poe-component-captcha-recaptcha/tree
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/bingos/poe-component-captcha-recaptcha.git
+version: 0.02
